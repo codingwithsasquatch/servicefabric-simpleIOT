@@ -38,7 +38,7 @@ namespace queueworkerSrv
             long iterations = 0;
 
             //connection string for the queue
-            var connectionString = "Endpoint=sb://themayor.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=YlKnifGR3vDgAiK52OSs9rXt2PEenoksE/I+gViwJ1E=";
+            var connectionString = "Endpoint=sb://themayor.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=<keyname>";
             var queueName = "hackprocessdemo";
 
             var client = QueueClient.CreateFromConnectionString(connectionString, queueName);
